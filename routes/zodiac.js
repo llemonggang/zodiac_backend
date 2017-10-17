@@ -5,7 +5,7 @@ var axios = require('axios');
 
 router.get('/', function(req, res, next) {
 
-  axios.get('http://www.api.littleastro.com/restserver/index.php/api/horoscope/readings/format/json')
+  axios.get('https://api.littleastro.com/public/xiaoerge_dev_horoscope.php')
   .then(function (response) {
     console.log(response.data);
     res.json(response.data);
